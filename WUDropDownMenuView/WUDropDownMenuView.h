@@ -10,4 +10,6 @@
 
 @interface WUDropDownMenuView : UIView
 
+- (instancetype)initWithFrame:(CGRect)frame titles:(NSArray *)titles;
+
 @end

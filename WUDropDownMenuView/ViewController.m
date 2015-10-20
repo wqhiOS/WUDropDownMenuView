@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "WUDropDownMenuView.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.navigationItem.titleView = [[WUDropDownMenuView alloc] initWithFrame:CGRectMake(0, 0, 100, 44) titles:@[@"menu 1",@"menu 2",@"menu 3",@"menu 4"]];
 }
 
 - (void)didReceiveMemoryWarning {

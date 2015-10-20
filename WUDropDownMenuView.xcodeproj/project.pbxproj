@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15C9E7155630550B48429569 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F337DBC44B9E6EC3593656D9 /* libPods.a */; };
 		579270D51BD648FA0092423D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 579270D41BD648FA0092423D /* main.m */; };
 		579270D81BD648FA0092423D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 579270D71BD648FA0092423D /* AppDelegate.m */; };
 		579270DB1BD648FA0092423D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579270DA1BD648FA0092423D /* ViewController.m */; };
 		579270DE1BD648FA0092423D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579270DC1BD648FA0092423D /* Main.storyboard */; };
 		579270E01BD648FA0092423D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 579270DF1BD648FA0092423D /* Assets.xcassets */; };
 		579270E31BD648FA0092423D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579270E11BD648FA0092423D /* LaunchScreen.storyboard */; };
+		579270ED1BD649D20092423D /* WUDropDownMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 579270EC1BD649D20092423D /* WUDropDownMenuView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,11 @@
 		579270DF1BD648FA0092423D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		579270E21BD648FA0092423D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		579270E41BD648FA0092423D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		579270EB1BD649D20092423D /* WUDropDownMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WUDropDownMenuView.h; sourceTree = "<group>"; };
+		579270EC1BD649D20092423D /* WUDropDownMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WUDropDownMenuView.m; sourceTree = "<group>"; };
+		D8536CBB3A5DEB1C789FC037 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F337DBC44B9E6EC3593656D9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8520952C2CA282054282CCC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +40,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15C9E7155630550B48429569 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F256F98BBB6D120E42482F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F337DBC44B9E6EC3593656D9 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		579270C71BD648FA0092423D = {
 			isa = PBXGroup;
 			children = (
 				579270D21BD648FA0092423D /* WUDropDownMenuView */,
 				579270D11BD648FA0092423D /* Products */,
+				717AD2A721C456C728279C0F /* Pods */,
+				2F256F98BBB6D120E42482F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +76,7 @@
 		579270D21BD648FA0092423D /* WUDropDownMenuView */ = {
 			isa = PBXGroup;
 			children = (
+				579270EA1BD649BD0092423D /* WUDropDownMenuView */,
 				579270D61BD648FA0092423D /* AppDelegate.h */,
 				579270D71BD648FA0092423D /* AppDelegate.m */,
 				579270D91BD648FA0092423D /* ViewController.h */,
@@ -79,6 +98,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		579270EA1BD649BD0092423D /* WUDropDownMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				579270EB1BD649D20092423D /* WUDropDownMenuView.h */,
+				579270EC1BD649D20092423D /* WUDropDownMenuView.m */,
+			);
+			name = WUDropDownMenuView;
+			sourceTree = "<group>";
+		};
+		717AD2A721C456C728279C0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8520952C2CA282054282CCC /* Pods.debug.xcconfig */,
+				D8536CBB3A5DEB1C789FC037 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +123,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 579270E71BD648FA0092423D /* Build configuration list for PBXNativeTarget "WUDropDownMenuView" */;
 			buildPhases = (
+				A024395615437E9DD79994D8 /* Check Pods Manifest.lock */,
 				579270CC1BD648FA0092423D /* Sources */,
 				579270CD1BD648FA0092423D /* Frameworks */,
 				579270CE1BD648FA0092423D /* Resources */,
+				C196874ED90B8EF6F21B691D /* Embed Pods Frameworks */,
+				45487838BE3ACB74753B741C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,11 +184,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		45487838BE3ACB74753B741C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A024395615437E9DD79994D8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C196874ED90B8EF6F21B691D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		579270CC1BD648FA0092423D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				579270ED1BD649D20092423D /* WUDropDownMenuView.m in Sources */,
 				579270DB1BD648FA0092423D /* ViewController.m in Sources */,
 				579270D81BD648FA0092423D /* AppDelegate.m in Sources */,
 				579270D51BD648FA0092423D /* main.m in Sources */,
@@ -259,6 +348,7 @@
 		};
 		579270E81BD648FA0092423D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8520952C2CA282054282CCC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WUDropDownMenuView/Info.plist;
@@ -270,6 +360,7 @@
 		};
 		579270E91BD648FA0092423D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8536CBB3A5DEB1C789FC037 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WUDropDownMenuView/Info.plist;
@@ -298,6 +389,7 @@
 				579270E91BD648FA0092423D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
