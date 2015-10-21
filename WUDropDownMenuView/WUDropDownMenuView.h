@@ -10,6 +10,9 @@
 
 @interface WUDropDownMenuView : UIView
 
+@property (nonatomic, assign) CGFloat cellHeight;
+@property (nonatomic, assign) CGFloat bgBlackViewAlpha;
+
 - (instancetype)initWithFrame:(CGRect)frame titles:(NSArray *)titles;
 
 @end
